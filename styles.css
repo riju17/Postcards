@@ -430,19 +430,20 @@ main {
 }
 
 .bird-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   margin-bottom: 2rem;
 }
 
 .bird-gallery img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  border: 1px solid var(--panel-glow);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(236, 152, 99, 0.25);
 }
 
 .bird-blog {
@@ -457,6 +458,14 @@ main {
   font-family: 'Montserrat', sans-serif;
 }
 
+.section-marker {
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+}
+
 .back-link {
   display: inline-flex;
   margin-top: 2rem;
@@ -465,10 +474,8 @@ main {
   font-weight: 600;
 }
 
-section,
 .panel,
-.bird-card,
-.bird-detail {
+.bird-card {
   opacity: 0;
   transform: translateY(40px);
 }
