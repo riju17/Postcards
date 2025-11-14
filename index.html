@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winged Wonders | Birds Postcard Exhibit</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="page-home">
+    <div class="sky-gradient" aria-hidden="true"></div>
+    <div class="stars" aria-hidden="true"></div>
+
+    <header class="navbar">
+      <a class="brand" href="index.html">Winged Wonders</a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="herbivores.html">Herbivores</a></li>
+          <li><a href="carnivores.html">Carnivores</a></li>
+          <li><a href="omnivores.html">Omnivores</a></li>
+          <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </header>
+
+    <main>
+      <section class="panel hero">
+        <div class="hero-text">
+          <p class="eyebrow">Picture Postcard Exhibit</p>
+          <h1>Birds – The Winged Wonders of Nature</h1>
+          <p>
+            A cinematic stroll through postcards, maxim cards, travelled memories, and
+            special cancellations that celebrate the guardians of earth’s balance.
+          </p>
+          <div class="hero-actions">
+            <a class="cta" href="introduction.html">Start with Introduction</a>
+            <a class="cta ghost" href="herbivores.html">Explore Birds</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="bird-orbit orbit-one"></div>
+          <div class="bird-orbit orbit-two"></div>
+          <div class="bird-orbit orbit-three"></div>
+        </div>
+      </section>
+
+      <section class="panel summary">
+        <div class="section-heading">
+          <p class="label">The Journey</p>
+          <h2>From Ecology to Conservation</h2>
+        </div>
+        <p>
+          Each chapter visitors explore reveals how humans and birds share cycles of
+          pollination, scavenging, migration, and memory. QR-friendly anchors take you
+          from diet-based chapters to individual bird stories.
+        </p>
+        <div class="chapter-links">
+          <a href="herbivores.html" class="chapter-card">Chapter 2 · Herbivorous Birds</a>
+          <a href="carnivores.html" class="chapter-card">Chapter 3 · Carnivorous Birds</a>
+          <a href="omnivores.html" class="chapter-card">Chapter 4 · Omnivorous Birds</a>
+          <a href="conclusion.html" class="chapter-card">Chapter 5 · Conclusion</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Exhibit: Birds – The Winged Wonders of Nature</p>
+      <p>Designed as a digital postcard project.</p>
+    </footer>
+  </body>
+</html>
