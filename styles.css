@@ -451,6 +451,10 @@ main {
   object-fit: cover;
 }
 
+.bird-gallery.portrait-gallery.tall-portrait img {
+  aspect-ratio: 53 / 124;
+}
+
 .bird-blog {
   padding: 2rem;
   border-radius: 24px;
